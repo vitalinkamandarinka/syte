@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+}
+
+.poster {
+    background-image: url('spider.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;     
+    font-size: 120px; 
+    color: red; 
+    text-shadow: 0 0 10px #ffffff, 
+                 0 0 20px #ffffff, 
+                 0 0 40px #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .vertical-text {
+        font-size: 60px
+        letter-spacing: 5px;
+    }
+}
