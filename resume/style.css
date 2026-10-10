@@ -73,3 +73,70 @@ a:hover {
 .contacts p:hover {
     border-color: #d6336c; 
 }
+
+.greeting-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff9fb;
+    border-radius: 12px;
+    border: 1px solid #ffb6c1;
+}
+
+#greeting {
+    font-size: 18px;
+    font-weight: 600;
+    color: #d6336c;
+    margin: 0 0 5px 0;
+}
+
+#clock {
+    font-size: 28px;
+    font-weight: bold;
+    color: #a61e4d;
+    margin: 0 0 10px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.visitors {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.visitors span {
+    color: #d6336c;
+    font-weight: bold;
+}
+
+.skill {
+    margin-bottom: 18px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #4a4a4a;
+    font-size: 15px;
+}
+
+.skill-percent {
+    color: #d6336c;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background: #ffe4e1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    width: 0; 
+    background: linear-gradient(90deg, #f06595, #d6336c);
+    border-radius: 10px;
+    transition: width 1.5s ease;
+}
